@@ -1,6 +1,6 @@
 // Installed express and started it on port 8000
 const express=require('express');
-const port=8000;
+const port=process.env.PORT || 8000;
 
 // Connected to the database
 const db=require('./config/config');
